@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.aboutContent2 {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  color: #f5eeee;
+  font-size: 19px;
+}
+.aboutContent2 > h1 {
+  color: rgb(255, 123, 75);
+  text-shadow: 0.08rem 0.08rem 0rem white;
+}
+.tech {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #696868;
+  justify-content: center;
+  align-items: center;
+  color: #f5eeee;
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 40px 50px black;
+}
+.cta > i {
+  font-size: 80px;
+}
+.h1 {
+  margin: auto;
+  margin-bottom: 20px;
+  color: rgb(255, 123, 75);
+  text-shadow: 0.08rem 0.08rem 0rem white;
+}
+@media screen and (max-width: 720px) {
+  .aboutContent2 {
+    width: 80%;
+  }
+  .h1 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(255, 123, 75);
+    text-shadow: 0.08rem 0.08rem 0rem white;
+  }
+}

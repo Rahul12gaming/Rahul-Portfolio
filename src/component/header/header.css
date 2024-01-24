@@ -1,0 +1,111 @@
+header {
+   
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  border: 1px solid #424242;
+  /* width: 100%; */
+  background: url("../../bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #323232;
+}
+header > nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo > p {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+}
+.logo > p > span {
+  color: orangered;
+}
+.links {
+  display: flex;
+  gap: 15px;
+
+  font-size: 20px;
+}
+.links > a {
+  height: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* .links>a:hover
+{
+    border-bottom: 4px solid orangered;
+    
+} */
+.links > a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: orangered;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+.links > a:hover::after {
+  width: 100%;
+}
+.menuBtn {
+  display: none;
+}
+.menuContainer {
+  display: none;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 720px) {
+  .links {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
+  }
+  .menuBtn > button {
+    font-size: 22px;
+  }
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .menuContainer > a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 10px;
+  }
+  .menuContainer >a::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 5px;
+    width: 0;
+    border-radius: 16px;
+    background: orangered;
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease-out 0s;
+  }
+  .menuContainer > a:hover::after {
+    width: 100%;
+  }
+}
+

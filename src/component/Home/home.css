@@ -1,0 +1,144 @@
+.homeContent
+{
+    padding: 50px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftSide
+{
+    width: 50%;
+    font-weight: 600;
+}
+.leftSide>p:nth-child(1){
+    font-size: 36px;
+    color: #fff;
+}
+.leftSide>p:nth-child(2)
+{
+    font-size: 42px;
+    color: #fff;
+}
+.leftSide>p:nth-child(2)>span
+{
+    color: orangered;
+}
+.leftSide>p:nth-child(3)
+{
+    font-size: 28px;
+    color: rgb(226, 92, 44);
+    filter: drop-shadow(5px 5px 3px #323232);
+   
+    animation: PopUp 1s alternate infinite;
+
+}
+
+.rightSide
+{
+    width: 50%;
+}
+.rightSide>img
+{
+    width: 80%;
+}
+.aboutContent
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+**
+.aboutMe
+{
+    width: 60%;
+}
+.aboutImg
+{
+    width: 30%;
+}
+.aboutImg>img
+{
+    width: 80%;
+}
+.aboutMe>p
+{
+    font-size: 20px;
+    color: #fff;
+}
+.aboutMe>p>span
+{
+    color: orangered;
+}
+.aboutHeading
+{
+    text-align: center;
+    font-size: 38px;
+    color: #fff;
+}
+.aboutHeading::after
+{
+    position: relative;
+    display: block;
+    margin: auto;
+    content: "";
+    width: 200px;
+    margin-top: 2px;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 5px;
+    background: #fff;
+}
+@keyframes PopUp {
+    0%
+    {
+        font-size: 28px;
+    }    
+    100%
+    {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:720px) {
+    .homeContent
+    {
+        width: 90%;
+        flex-direction: column;
+    }
+    .leftSide
+    {
+        width: 100%;
+    }
+    .rightSide
+    {
+        width: 100%;
+    }
+
+    .leftSide>p:nth-child(1){
+        font-size: 26px;
+       
+    }
+    .leftSide>p:nth-child(2)
+    {
+        font-size: 32px;
+        color: #fff;
+    }
+    .leftSide>p:nth-child(3)
+    {
+        font-size: 28px;
+       
+    
+    }
+    .aboutHeading
+    {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .aboutMe>p
+    {
+        font-size: 18px;
+    }
+}

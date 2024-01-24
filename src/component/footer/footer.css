@@ -1,0 +1,18 @@
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 100;
+    font-size: 20px;
+    color: #fff;
+   
+    border: 1px solid #424242;
+    /* width: 100%; */
+    background:url('../../bg.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+    background-color: #323232;
+}
