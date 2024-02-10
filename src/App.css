@@ -6,7 +6,7 @@ body {
   background-color: #323232;
   position: relative;
   
-  background-image: url('./bg.jpg');
+  background: url('./bg.jpg');
   
   background-position: center;
   background-size: contain;
